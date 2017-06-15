@@ -1,6 +1,6 @@
 {
   "name": "whistle.deploy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "whistle deploy plugin",
   "homepage": "",
   "main": "index.js",

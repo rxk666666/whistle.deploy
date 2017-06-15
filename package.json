@@ -4,6 +4,10 @@
   "description": "whistle deploy plugin",
   "homepage": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rxk666666/whistle.deploy.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

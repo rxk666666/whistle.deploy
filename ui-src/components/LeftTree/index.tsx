@@ -1,11 +1,11 @@
 import * as React from 'react';
 import 'rc-tree/assets/index.css';
-import Tree from 'rc-tree';
-
+import {Col} from 'react-flexbox-grid';
+const Tree = require('rc-tree');
+const TreeNode = Tree.TreeNode;
 export interface LeftTreeProps{
 
 }
-
 
 export default class LeftTree extends React.Component<LeftTreeProps, undefined>{
 
@@ -16,10 +16,24 @@ export default class LeftTree extends React.Component<LeftTreeProps, undefined>{
         super(props);
     }
 
-    render(){
-        console.log(Tree);
-        return <Tree>
+    onSelect = (keys:any, info:any) => {
+        console.log(keys, info)
+    }
 
-        </Tree>
+    render(){
+        console.log(Tree.TreeNode);
+        return (
+            <Col xs={3}>
+                <Tree
+                    onSelect={this.onSelect}
+                >
+                    <TreeNode title="parent-1">
+                        <TreeNode title="leaf-1"></TreeNode>
+                        <TreeNode title="leaf-2"></TreeNode>
+                    </TreeNode>
+                    <TreeNode title="leaf-3"></TreeNode>
+                </Tree>
+            </Col>
+        )
     }
 }

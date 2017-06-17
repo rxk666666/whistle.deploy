@@ -1,6 +1,7 @@
 // require('./index.scss');
 import './index.scss';
 import * as React from "react";
+import {Grid, Row, Col} from 'react-flexbox-grid';
 import LeftTree from 'components/LeftTree';
 
 export interface AppProps {};
@@ -11,6 +12,10 @@ export class App extends React.Component<AppProps, undefined>{
     }
     
     render(){
-        return <div><LeftTree/></div>
+        return (
+            <Row className="mod-container">
+                <LeftTree />
+            </Row>
+        )
     }
 }

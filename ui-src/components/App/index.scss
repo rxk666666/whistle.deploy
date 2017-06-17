@@ -2,3 +2,24 @@ body, div{
     margin: 0;
     padding: 0; 
 }
+html, body{
+    height: 100%;
+}
+// @mixin display-box($orient){
+//     display: box;
+//     box-orient: $orient;
+//     display: -webkit-box;
+//     -webkit-box-orient: $orient;
+// }
+// @mixin box-flex($flex){
+//     box-flex: $flex;
+//     -webkit-box-flex: $flex;
+// }
+// .mod-warpper{
+//     height: 100%;
+//     @include display-box(vertical)
+// }
+// .mod-container{
+//     @include box-flex(1)
+
+// }

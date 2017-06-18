@@ -1,0 +1,5 @@
+@import '../style/mixins/index.scss';
+
+.mod-right-panel{
+    @include box-flex(1);
+}

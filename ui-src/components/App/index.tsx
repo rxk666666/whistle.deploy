@@ -3,6 +3,7 @@ import './index.scss';
 import * as React from "react";
 import {Grid, Row, Col} from 'react-flexbox-grid';
 import LeftTree from 'components/LeftTree';
+import RightPanel from 'components/RightPanel';
 
 export interface AppProps {};
 
@@ -13,9 +14,10 @@ export class App extends React.Component<AppProps, undefined>{
     
     render(){
         return (
-            <Row className="mod-container">
+            <div className="mod-container">
                 <LeftTree />
-            </Row>
+                <RightPanel/>
+            </div>
         )
     }
 }

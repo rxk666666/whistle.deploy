@@ -1,0 +1,6 @@
+@mixin display-box($orient){
+    display: box;
+    box-orient: $orient;
+    display: -webkit-box;
+    -webkit-box-orient: $orient;
+}

@@ -20,7 +20,7 @@ html, body {
   display: -webkit-box;
   -webkit-box-orient: horizontal; }
 .mod-tree {
-  width: 200px;
+  width: 300px;
   overflow: scroll; }
 .rc-tree {
   margin: 0;
